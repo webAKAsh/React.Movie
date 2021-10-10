@@ -46,12 +46,12 @@ const App = () => {
       <MdOutlineSearch className='inline'/>
       </button>
       </div>
-      <ul className='grid grid-cols-3 p-7 gap-7'>
+      <ul className='grid grid-cols-none p-7 gap-7 
+      sm:grid sm:grid-cols-3'>
 
         {
           display.filter(clip => {
             if( search === ''){
-              console.log(clip)
               return clip
             } 
             else if (clip.title.toLowerCase().includes(search.toLowerCase())){
